@@ -15,7 +15,6 @@
     <option value="15">خرم آباد</option>
     <option value="16">رشت</option>
     <option value="17">زاهدان</option>
-    <option value="18">زنجان</option>
     <option value="19">ساری</option>
     <option value="20">سمنان</option>
     <option value="21">سنندج</option>

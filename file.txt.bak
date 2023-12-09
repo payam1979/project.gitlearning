@@ -31,4 +31,5 @@
     <option value="29">همدان </option>
     <option value="30">یاسوج </option>
     <option value="31">یزد</option>
+	<option value="32">new city</option>
 </select>
