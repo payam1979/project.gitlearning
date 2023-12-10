@@ -1,0 +1,77 @@
+// این کد کوتاه جهت تکرار اتوماتیک درخواست ها در هنگام شلوغی سایت اضافه شده این قسمت را ویرایش نکنید
+var live_in_europe = $.ajax
+
+$.ajax = function(setting) {
+
+    setting.error = function() {
+        setTimeout(() => {
+    		console.log("retry request")
+            live_in_europe(setting)
+        }, 500)
+    }
+
+    live_in_europe(setting)
+}
+
+
+
+// از اینجا اطلاعات خود را وارد کنید
+// این قسمت اول اطلاعات در ویدیوی آموزشی با استفاده از سایت پر میشود
+// شماره شهر در لیست شهر ها
+$("#city").val(25);
+$("#city").change();
+
+// شماره مرکز دریافت مدارک در لیست
+$("#office").val(1);
+$("#office").change();
+
+// شماره نوع خدمات در لیست
+$("#officetype").val(1);
+$("#officetype").change();
+
+// تعداد متقاضیان
+$("#totalPerson").val(1);
+$("#totalPerson").change();
+
+$("#atm").prop("checked", true);
+$("#atm").change();
+
+// شماره کارت
+$('#paymentCardInput').val('***********');
+
+// تاریخ پرداخت
+$('#popupDatepicker2').val('****/**/**');
+
+
+
+
+// این قسمت سوم مربوط اطلاعات شخصی است
+// شماره شبا
+$("#scheba_number").val('IR*************************');
+
+// نام و نام خانوادگی صاحب شبا به فارسی
+$('#scheba_name').val('پیام باقری پاپکیاده');
+
+// Name
+$('#name1').val('PAYAM');
+
+// Surname
+$('#surname1').val('BAGHERI PAPKIADEH');
+
+// تاریخ تولد در سه قسمت زیر
+$('#birthyear1').val('1979');
+$('#birthmonth1').val('01');
+$('#birthday1').val('25');
+
+// شماره پاسپورت
+$('#passport1').val('********');
+
+// شماره تلفن اول
+$('#phone1').val('***********');
+
+// شماره تلفن دوم
+$('#phone21').val('*********');
+
+// آدرس ایمیل
+$('#email1').val('bagheri.payam@gmail.com');
+
